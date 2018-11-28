@@ -1,7 +1,7 @@
 
 
 
-simple yedekComputer
+simple yedekComputer1
 {
     parameters:
         @display("i=block/routing");
@@ -13,6 +13,14 @@ simple yedekComputer
 network yedekNetwork
 {
     @display("bgb=1939.535,744.5675");
+     types:
+        channel Channel extends ned.DelayChannel
+        {
+            delay = 100ms;
+            @backbone;
+    		double cost = default(1);
+    		double lenght = default(1);
+        }
     submodules:
         computer: Computer {
             @display("p=47.855,54.8925");
@@ -168,10 +176,10 @@ network yedekNetwork
             @display("p=1831.1576,677.0075");
         }
     connections:
-        computer.o++ --> computer1.i++;
-        computer1.o++ --> computer13.i++;
-        computer13.o++ --> computer12.i++;
-        computer12.o++ --> computer23.i++;
+        computer.o++ -->Channel {cost = 3; lenght = 5;} --> computer1.i++;
+        computer1.o++ -->Channel {cost = 3; lenght = 5;} --> computer13.i++;
+        computer13.o++ -->Channel {cost = 3; lenght = 5;} --> computer12.i++;
+        computer12.o++ --> Channel {cost = 3; lenght = 5;} --> computer23.i++;
         computer23.o++ --> computer7.i++;
         computer7.o++ --> computer10.i++;
         computer10.o++ --> computer24.i++;
