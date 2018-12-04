@@ -5,7 +5,6 @@ simple testComputer
 {
     parameters:
         @display("i=block/routing");
-        volatile double weight = default(10) @unit();
     gates:
         input i[];
         output o[];
