@@ -36,7 +36,7 @@ void Computer :: initialize(){
     cTopology::Node *node = topo->getNodeFor(this);
     weight =  intuniform(0, 10000);
     node->setWeight(weight);
-    EV <<"\n Index : " << getIndex() << " - weigt : " << node->getWeight() << "\n";
+    // EV <<"\n Index : " << getIndex() << " - weigt : " << node->getWeight() << "\n";
     if(getIndex() == SOURCE_NODE){
         //Returns the graph node which corresponds to the given module in the network.
         //If no graph node corresponds to the module, the method returns NULL.
