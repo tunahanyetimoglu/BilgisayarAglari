@@ -16,26 +16,24 @@ network Network
     types:
         channel Channel extends ned.DelayChannel
         {
-            @backbone;
-    		double cost = default(1);
-    		double lenght = default(1);
+            delay = default(1ms);
         }
     submodules:
         node[50]: Computer;
     connections:
         for i=0..24 {
-            node[i*2].o++ --> Channel {cost = i+1; lenght = i + 2;}  --> node[i+2].i++;
+            node[i*2].o++ --> Channel {delay = 100ms; }  --> node[i+2].i++;
         }
         for i=0..10 {
-            node[i*4].o++ --> Channel {cost = i+1; lenght = i * 2;}  --> node[i].i++;
+            node[i*4].o++ --> Channel {delay = 200ms; }  --> node[i].i++;
         }
-        for i=0..15 {
-            node[i*3].o++ --> Channel {cost = i+4; lenght = i + 3;}  --> node[i*2].i++;
-            node[i].o++ --> Channel {cost = i+5; lenght = i + 2;}  --> node[i*3].i++;
+        for i=0..15 {  
+            node[i*3].o++ --> Channel {delay = 300ms; }  --> node[i*2].i++;
+            node[i].o++ --> Channel {delay = 400ms;}  --> node[i*3].i++;
         }
         for i=0..48 {
-            node[i].o++ --> Channel {cost = i*2; lenght = i + 5;}  --> node[i+1].i++;
-            node[i].i++ <-- Channel {cost = i*3; lenght = i + 1;}  <-- node[i+1].o++;
+            node[i].o++ --> Channel {delay = 500ms;}  --> node[i+1].i++;
+            node[i].i++ <-- Channel {delay = 500ms;}  <-- node[i+1].o++;
         }
 }
 
