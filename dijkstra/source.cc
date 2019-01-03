@@ -9,8 +9,8 @@
 #include <string.h>
 #include <omnetpp.h>
 
-#define DEST_NODE "45"
-#define SOURCE_NODE 27
+#define DEST_NODE "41"
+#define SOURCE_NODE 1
 
 using namespace omnetpp;
 
@@ -36,7 +36,7 @@ void Computer :: initialize(){
     cTopology::Node *node = topo->getNodeFor(this);
     weight =  intuniform(0, 10000);
     node->setWeight(weight);
-    EV <<"\n Index : " << getIndex() << " - weigt : " << node->getWeight() << "\n";
+   // EV <<"\n Index : " << getIndex() << " - weigt : " << node->getWeight() << "\n";
     if(getIndex() == SOURCE_NODE){
         //Returns the graph node which corresponds to the given module in the network.
         //If no graph node corresponds to the module, the method returns NULL.
@@ -58,7 +58,7 @@ void Computer :: initialize(){
 
         cGate *c = sourceNode->getPath(0)->getLocalGate();      // getLocalGate:  returns  the gates at the local  end of this connection
         char msgname[20];
-        sprintf(msgname, "Node : -%d", getIndex());
+        sprintf(msgname, "Source Node : %d", getIndex());
         cMessage *msg = new cMessage(msgname);
         send(msg,c);
     }
@@ -96,8 +96,9 @@ void Computer::handleMessage(cMessage *msg)
 
         if(sourceNode->getNumPaths() != 0){
             cGate *c = sourceNode->getPath(0)->getLocalGate();
+            char msgname[20];
+            sprintf(msgname, "Node : %d", getIndex());
+            cMessage *msg = new cMessage(msgname);
             send(msg,c);
         }
 }
-
-
