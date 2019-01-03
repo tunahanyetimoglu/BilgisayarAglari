@@ -1,7 +1,7 @@
 #include <string.h>
 #include <omnetpp.h>
 
-#define ROOT "node23"
+#define ROOT 1
 #define  GATENAME "g$o"
 #define GATENAME_i "g$i"
 
@@ -36,7 +36,7 @@ Define_Module(Node);
 void Node::initialize()
 {
     hasParent = false;
-    if (strcmp(ROOT,getName()) == 0) {
+    if (getIndex() == ROOT) {
         hasParent = true;
         //this->setName("ROOT");
         scheduleAt(0.0, PROBE);
@@ -69,13 +69,13 @@ void Node::handleMessage(cMessage *msg)
                 }
             }
         }else if(strcmp(msg->getName(), "Ack") == 0){
-            children.push_back(msg->getArrivalGate()->getPreviousGate()->getOwner()->getName());
+            children.push_back(msg->getArrivalGate()->getPreviousGate()->getOwner()->getFullName());
             cDisplayString& arrivalDispStr = gate(GATENAME, msg->getArrivalGate()->getIndex())->getDisplayString();
             arrivalDispStr.parse("ls=blue,5");
 
             EV << getName() << "'s childs: ";
             for(int i = 0; i < children.size(); i++){
-                EV << children.at(i) << " , ";
+                EV << " Node : " << children.at(i) << " , ";
             }
             EV << "\n";
         }else if(strcmp(msg->getName(), "Reject") == 0){
