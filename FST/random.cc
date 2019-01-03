@@ -73,7 +73,7 @@ void Node::handleMessage(cMessage *msg)
             cDisplayString& arrivalDispStr = gate(GATENAME, msg->getArrivalGate()->getIndex())->getDisplayString();
             arrivalDispStr.parse("ls=blue,5");
 
-            EV << getName() << "'s childs: ";
+            EV << getFullName() << "'s childs: ";
             for(int i = 0; i < children.size(); i++){
                 EV << " Node : " << children.at(i) << " , ";
             }
