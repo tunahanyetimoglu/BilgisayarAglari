@@ -16,9 +16,6 @@ class FST : public cSimpleModule
 {
 private:
     bool hasParent;
-    int gateIndex;
-    int gateId;
-    int messageCode;
     std::vector<std::string> children;
 
 protected:
@@ -27,6 +24,10 @@ protected:
     virtual void handleMessage(cMessage *msg) override;
 
 };
+
+int gateIndex;
+int gateId;
+int messageCode;
 
 Define_Module(FST);
 

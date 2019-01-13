@@ -11,7 +11,7 @@ simple Node
 network RandomNetwork
 {
     parameters:
-        int n = 150;  // Number of Nodes
+        int n;  // Number of Nodes
     @display("bgb=3592.1213,1401.3888");
     types:
         channel Channel extends ned.DelayChannel
@@ -28,7 +28,7 @@ network RandomNetwork
             node[i*3].g++ <--> Channel {delay = intuniform(0ms,1000ms); } <--> node[i+3].g++;
         }
         for i=1..int(n/3)-3{
-            node[i*3].g++ <--> Channel {delay = intuniform(0ms, 1000ms); } <--> node[i+25].g++;
+            node[i*3].g++ <--> Channel {delay = intuniform(0ms, 1000ms); } <--> node[i+1].g++;
         }
         for i=7..int(n-15){
             node[i].g++ <--> Channel {delay = intuniform(0ms,1000ms); } <--> node[i+14].g++;
