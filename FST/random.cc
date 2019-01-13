@@ -29,11 +29,8 @@ int gateIndex;
 int gateId;
 int messageCode;
 
-<<<<<<< HEAD
 Define_Module(Node);
 
-=======
->>>>>>> 321671468de3e120cbcfb88b3575a4809050429e
 void Node::initialize()
 {
     hasParent = false;
