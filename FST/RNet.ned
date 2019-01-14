@@ -16,6 +16,7 @@
 simple FST
 {
     parameters:
+        bool hasParent = default(false);
         @display("i=abstract/penguin");
     gates:
         inout gate[];

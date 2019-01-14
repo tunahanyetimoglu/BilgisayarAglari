@@ -3,9 +3,10 @@
 
 simple Node
 {
-        @display("i=abstract/penguin");
+    bool hasParent = default(false);
+    @display("i=abstract/penguin");
     gates:
-        inout g[];
+        inout gate[];
 }
 
 network RandomNetwork
@@ -22,16 +23,16 @@ network RandomNetwork
         node[n]: Node;
     connections:
         for i=0..int(n/2)-1 {
-            node[i].g++ <--> Channel {delay = intuniform(0ms, 10000ms); }  <--> node[i+4].g++;
+            node[i].gate++ <--> Channel {delay = intuniform(0ms, 10000ms); }  <--> node[i+4].gate++;
         }
         for i=0..int(n/5)+5{
-            node[i*3].g++ <--> Channel {delay = intuniform(0ms,1000ms); } <--> node[i+3].g++;
+            node[i*3].gate++ <--> Channel {delay = intuniform(0ms,1000ms); } <--> node[i+3].gate++;
         }
         for i=1..int(n/3)-3{
-            node[i*3].g++ <--> Channel {delay = intuniform(0ms, 1000ms); } <--> node[i+1].g++;
+            node[i*3].gate++ <--> Channel {delay = intuniform(0ms, 1000ms); } <--> node[i+1].gate++;
         }
         for i=7..int(n-15){
-            node[i].g++ <--> Channel {delay = intuniform(0ms,1000ms); } <--> node[i+14].g++;
+            node[i].gate++ <--> Channel {delay = intuniform(0ms,1000ms); } <--> node[i+14].gate++;
         }
 }
 
