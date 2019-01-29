@@ -10,7 +10,7 @@ simple Node
 network RandomNetwork
 {
     parameters:
-        int n = 50;
+        int n;
           @display("bgb=3592.1213,1401.3888");
     types:
         channel Channel extends ned.DelayChannel
