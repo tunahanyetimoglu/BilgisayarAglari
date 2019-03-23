@@ -18,7 +18,7 @@ dönem boyunca labaratuvarda verilen projelerin **OmNet++** kullanılarak taraf�
 
 * **OmNet++** da programlama 2 kavram öne çıkar.
 * Topoloji 
-  * **OmNet++** da ağ topolojisi tanımlamaarı *.ned* (Network Description File) uzantılı dosyalarda gerçekleştirilir.
+  * **OmNet++** da ağ topolojisi tanımlamaları *.ned* (Network Description File) uzantılı dosyalarda gerçekleştirilir.
   * Kod olarak yazılabileceği gibi görsel olarakta bu tanımlamayı gerçekleştirmemize imkan sağlar.
 * Kaynak Kod ( Davranış )
   * **OmNet++** da yer alan modüller C++ dilinde yazılmıştır.
