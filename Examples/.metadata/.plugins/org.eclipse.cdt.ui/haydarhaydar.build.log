@@ -1,0 +1,16 @@
+15:28:17 **** Incremental Build of configuration debug for project haydarhaydar ****
+make MODE=debug all 
+projeSource.cc
+Creating executable: out/clang-debug//haydarhaydar_dbg.exe
+out/clang-debug//projeSource.o: In function `(anonymous namespace)::__onstartup_func_32()':
+C:\Users\tunah\Desktop\omnetpp-5.4.1\samples\haydarhaydar/projeSource.cc:32: undefined reference to `typeinfo for Dugum'
+out/clang-debug//projeSource.o: In function `__castfunc_32(omnetpp::cObject*)':
+C:\Users\tunah\Desktop\omnetpp-5.4.1\samples\haydarhaydar/projeSource.cc:(.text+0x379): undefined reference to `typeinfo for Dugum'
+C:\Users\tunah\Desktop\omnetpp-5.4.1\samples\haydarhaydar/projeSource.cc:32: undefined reference to `typeinfo for Dugum'
+out/clang-debug//projeSource.o: In function `Dugum':
+C:\Users\tunah\Desktop\omnetpp-5.4.1\samples\haydarhaydar/projeSource.cc:22: undefined reference to `vtable for Dugum'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-debug//haydarhaydar_dbg.exe] Error 1
+
+15:28:21 Build Finished (took 3s.625ms)
+

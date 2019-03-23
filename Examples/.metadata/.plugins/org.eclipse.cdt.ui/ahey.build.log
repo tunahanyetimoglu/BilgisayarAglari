@@ -1,0 +1,7 @@
+21:45:52 **** Incremental Build of configuration release for project ahey ****
+make MODE=release all 
+source.cc
+Creating executable: out/clang-release//ahey.exe
+
+21:45:55 Build Finished (took 3s.442ms)
+

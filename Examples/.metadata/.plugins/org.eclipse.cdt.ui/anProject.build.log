@@ -1,0 +1,7 @@
+13:26:43 **** Incremental Build of configuration release for project anProject ****
+make MODE=release all 
+source.cc
+Creating executable: out/clang-release//anProject.exe
+
+13:26:47 Build Finished (took 4s.285ms)
+

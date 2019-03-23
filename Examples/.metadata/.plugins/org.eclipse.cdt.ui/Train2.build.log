@@ -1,0 +1,7 @@
+13:54:37 **** Incremental Build of configuration release for project Train2 ****
+make MODE=release all 
+node.cc
+Creating executable: out/clang-release//Train2.exe
+
+13:54:39 Build Finished (took 2s.248ms)
+

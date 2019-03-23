@@ -1,0 +1,6 @@
+18:47:43 **** Incremental Build of configuration release for project proje ****
+make MODE=release all 
+make: *** No rule to make target 'all'.  Stop.
+
+18:47:44 Build Finished (took 609ms)
+

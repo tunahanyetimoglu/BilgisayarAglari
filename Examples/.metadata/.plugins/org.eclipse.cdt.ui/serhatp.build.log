@@ -1,0 +1,6 @@
+18:55:28 **** Incremental Build of configuration release for project serhatp ****
+make MODE=release all 
+make: *** No rule to make target 'all'.  Stop.
+
+18:55:29 Build Finished (took 565ms)
+

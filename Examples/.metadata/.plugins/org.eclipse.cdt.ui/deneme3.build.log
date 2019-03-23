@@ -1,0 +1,10 @@
+20:50:20 **** Incremental Build of configuration debug for project deneme3 ****
+make MODE=debug all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/tunah/Desktop/omnetpp-5.4.1/samples/deneme3/src'
+source.cc
+Creating executable: ../out/clang-debug/src/deneme3_dbg.exe
+make[1]: Leaving directory '/c/Users/tunah/Desktop/omnetpp-5.4.1/samples/deneme3/src'
+
+20:50:25 Build Finished (took 4s.301ms)
+

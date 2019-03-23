@@ -1,0 +1,7 @@
+18:00:09 **** Incremental Build of configuration release for project spanning ****
+make MODE=release all 
+Source.cc
+Creating executable: out/clang-release//spanning.exe
+
+18:00:12 Build Finished (took 3s.664ms)
+

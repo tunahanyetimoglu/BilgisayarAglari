@@ -1,0 +1,7 @@
+21:40:39 **** Incremental Build of configuration debug for project ehuehu ****
+make MODE=debug all 
+dijkstra/yedekSource.cc
+Creating executable: out/clang-debug//ehuehu_dbg.exe
+
+21:40:43 Build Finished (took 4s.105ms)
+

@@ -1,0 +1,7 @@
+18:38:55 **** Incremental Build of configuration release for project denasd ****
+make MODE=release all 
+ss.cc
+Creating executable: out/clang-release//denasd.exe
+
+18:38:57 Build Finished (took 2s.125ms)
+

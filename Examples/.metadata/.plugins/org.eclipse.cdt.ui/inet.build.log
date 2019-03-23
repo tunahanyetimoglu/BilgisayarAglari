@@ -1,0 +1,14 @@
+20:02:51 **** Incremental Build of configuration release for project inet ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/tunah/Desktop/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/tunah/Desktop/omnetpp-5.4.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,C:/Users/tunah/Desktop/omnetpp-5.4.1/lib -Wl,-rpath,C:/Users/tunah/Desktop/omnetpp-5.4.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/tunah/Desktop/omnetpp-5.4.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/tunah/Desktop/inet4/src'
+
+20:03:02 Build Finished (took 11s.909ms)
+

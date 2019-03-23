@@ -1,0 +1,13 @@
+04:08:24 **** Build of configuration release for project routing ****
+make MODE=release all 
+MSGC: node/Packet.msg
+builder/netbuilder.cc
+node/App.cc
+node/BurstyApp.cc
+node/L2Queue.cc
+node/Routing.cc
+node/Packet_m.cc
+Creating executable: out/clang-release//routing.exe
+
+04:08:42 Build Finished (took 18s.525ms)
+

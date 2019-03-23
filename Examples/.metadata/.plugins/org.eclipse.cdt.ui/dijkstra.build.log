@@ -1,0 +1,8 @@
+04:08:16 **** Build of configuration release for project dijkstra ****
+make MODE=release all 
+source.cc
+yedekSource.cc
+Creating executable: out/clang-release//dijkstra.exe
+
+04:08:23 Build Finished (took 6s.475ms)
+

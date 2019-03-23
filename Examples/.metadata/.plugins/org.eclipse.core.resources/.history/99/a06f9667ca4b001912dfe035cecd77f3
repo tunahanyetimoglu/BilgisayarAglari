@@ -1,0 +1,33 @@
+
+
+simple RBFS
+{
+    @display("i=abstract/penguin");
+    double my_layer = default(99999999);
+    gates:
+        inout gate[];
+
+}
+
+network RandomNetwork
+{
+    parameters:
+        int n = 50;
+        @display("bgb=3592.1213,1401.3888");
+    types:
+        channel Channel extends ned.DelayChannel
+        {
+            delay = default(1ms);
+            @backbone;
+            double cost = default(0);
+        }
+    submodules:
+        node[n]: RBFS {
+            @display("p=400.05502,373.08502");
+        }
+    connections:
+
+        for i=0..n-1, for j=0..n-1 {
+            node[i].gate++ <-->  node[j].gate++ if i!=j;
+        }
+}

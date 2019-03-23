@@ -1,0 +1,7 @@
+12:40:43 **** Incremental Build of configuration release for project sifirdan ****
+make MODE=release all 
+Source.cc
+Creating executable: out/clang-release//sifirdan.exe
+
+12:40:48 Build Finished (took 4s.481ms)
+

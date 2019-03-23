@@ -1,0 +1,6 @@
+18:49:51 **** Incremental Build of configuration release for project deneme ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+18:49:51 Build Finished (took 585ms)
+

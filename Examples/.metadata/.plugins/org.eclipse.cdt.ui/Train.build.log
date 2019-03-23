@@ -1,0 +1,6 @@
+13:51:07 **** Build of configuration release for project Train ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+13:51:07 Build Finished (took 275ms)
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.omnetpp.common.image.ImageSelectionDialog">
+		<item value="569" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="585" key="DIALOG_HEIGHT"/>
+		<item value="12" key="DIALOG_X_ORIGIN"/>
+		<item value="-82" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportWizard">
+	</section>
+	<section name="TemplateBasedWizard">
+		<item value="bundleentry://359.fwk307605969/templates/emptynedfile/" key="nedfile.template"/>
+		<item value="bundleentry://359.fwk307605969/templates/randomtopo/" key="network.template"/>
+		<item value="bundleentry://353.fwk307605969/templates/inifile/" key="inifile.template"/>
+		<item value="bundleentry://345.fwk307605969/template/emptyproject/" key="project.template"/>
+		<item value="bundleentry://357.fwk307605969/templates/emptymsgfile/" key="msgfile.template"/>
+	</section>
+	<section name="org.omnetpp.common.eventlog.FilterEventLogDialog">
+		<item value="1453" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="558" key="DIALOG_HEIGHT"/>
+		<item value="242" key="DIALOG_X_ORIGIN"/>
+		<item value="161" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

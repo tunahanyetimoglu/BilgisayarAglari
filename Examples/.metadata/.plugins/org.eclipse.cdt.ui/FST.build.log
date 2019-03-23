@@ -1,0 +1,6 @@
+17:03:39 **** Incremental Build of configuration release for project FST ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+17:03:40 Build Finished (took 461ms)
+
